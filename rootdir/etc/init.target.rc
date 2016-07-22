@@ -172,3 +172,11 @@ service calibacc /system/bin/accelcal
 
 on property:sys.sensors.acc=*
     start calibacc
+<<<<<<< HEAD
+=======
+
+on property:sys.boot_completed=1
+    # Temp hack to fix torch not being registered on boot
+    restart media
+
+>>>>>>> 80d5451... Try to fix disappearing torch tile by restarting media service after phone is fully booted

@@ -102,10 +102,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
 
+#Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.power.rc \
     init.target.rc
+
+# Browser
+PRODUCT_PACKAGES += \
+    Gello
 
 # RIL
 PRODUCT_PACKAGES += \

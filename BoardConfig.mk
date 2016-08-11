@@ -66,6 +66,9 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5939100672
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Fix compile with prebuilt kernel
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 

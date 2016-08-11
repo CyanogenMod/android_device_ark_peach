@@ -22,7 +22,7 @@ vendor/lib/libbtnv.so
 
 # Camera
 lib/hw/camera.msm8916.so
-lib/lib-mmqcamera.so
+lib/libmm-qcamera.so
 lib/libmmjpeg_interface.so
 bin/mm-qcamera-daemon
 vendor/lib/libjpegdhw.so

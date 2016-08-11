@@ -1,0 +1,26 @@
+From 3097504a214e574c6123888fedb7cbb3582aa79f Mon Sep 17 00:00:00 2001
+From: Ilya <ilya.lebedev.2003@mail.ru>
+Date: Sat, 16 Jul 2016 11:47:10 +0600
+Subject: [PATCH] patch
+
+---
+ board/kernel.mk | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/board/kernel.mk b/board/kernel.mk
+index 802d5b0..0c5ceb1 100644
+--- a/board/kernel.mk
++++ b/board/kernel.mk
+@@ -1,9 +1,6 @@
+-BOARD_DTBTOOL_ARGS := -2
+-
+ BOARD_KERNEL_BASE := 0x80000000
+ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
+ BOARD_KERNEL_PAGESIZE := 2048
+-BOARD_KERNEL_SEPARATED_DT := true
+ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
+ BOARD_RAMDISK_OFFSET     := 0x02000000
+ 
+-- 
+1.9.1
+

@@ -1,0 +1,37 @@
+# Audio
+ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=false
+
+# Display
+ro.sf.lcd_density=320
+
+# Radio
+ro.telephony.default_network=9,1
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+ro.telephony.ril.config=simactivation
+persist.radio.multisim.config=dsds
+persist.radio.custom_ecc=1
+persist.radio.ecc_hard_1=998
+persist.radio.ecc_hard_count=1
+
+persist.data.target=dpm1
+persist.data.qmi.adb_logmask=0
+
+#Enable B service adj transition by default
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000
+
+# Disable all camera debug
+persist.camera.hal.debug.mask=0
+
+# use threads max for dex2oat
+dalvik.vm.dex2oat-threads=4
+
+# Factory reset protection
+ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+# Latest hardware revision supported
+ro.product.model.platform=1

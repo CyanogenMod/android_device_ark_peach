@@ -25,8 +25,9 @@ DEVICE_PATH := device/ark/peach
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Kernel
-# FireDragonn+ kernel
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+TARGET_KERNEL_SOURCE := kernel/ark/peach
+TARGET_KERNEL_CONFIG := cyanogenmod_peach_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # Cpusets
 ENABLE_CPUSETS := true
@@ -65,9 +66,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 5939100672
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
-# Fix compile with prebuilt kernel
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

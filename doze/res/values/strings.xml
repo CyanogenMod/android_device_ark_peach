@@ -13,23 +13,23 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="ambient_display_title">Ambient display</string>
-    <string name="ambient_display_summary">Wake screen when you receive notifications</string>
+    <string name="ambient_display_title">DOZE-режим</string>
+    <string name="ambient_display_summary">Экран проснется когда вам придёт уведомление</string>
 
-    <string name="always_enabled_title">Always enable</string>
-    <string name="always_enabled_summary">Listen for sensor events as soon as the screen turns off</string>
+    <string name="always_enabled_title">Всегда активен</string>
+    <string name="always_enabled_summary">"Слушать" поведение датчиков, как только экран выключится</string>
 
-    <!-- Tilt sensor -->
-    <string name="tilt_sensor_title">Tilt sensor</string>
-    <string name="pick_up_title">Pick up</string>
-    <string name="pick_up_summary">Pulse notifications when device is picked up</string>
+    <!-- Сенсор наклона -->
+    <string name="tilt_sensor_title">Сенсор наклона</string>
+    <string name="pick_up_title">Режим "В руках"</string>
+    <string name="pick_up_summary">Пульсирующие уведомления когда девайс в руках</string>
 
-    <!-- Proximity sensor -->
-    <string name="priximity_sensor_title">Proximity sensor</string>
+    <!-- Датчик приближения -->
+    <string name="priximity_sensor_title">Датчик приближения</string>
     <string name="hand_wave_gesture_title">Hand wave</string>
-    <string name="hand_wave_gesture_summary">Pulse notifications on hand wave</string>
-    <string name="pocket_gesture_title">Pocket</string>
-    <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
+    <string name="hand_wave_gesture_summary">Пульсирующие уведомления on hand wave</string>
+    <string name="pocket_gesture_title">Режим "В кармане"</string>
+    <string name="pocket_gesture_summary">Пульсирующие уведомления когда девайс достается из кармана</string>
 
     <!-- Help text -->
     <string name="dlg_ok">OK</string>

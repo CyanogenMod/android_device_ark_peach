@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Property to read for ROM version -->
+    <string name="property_version">ro.cm.version</string>
+
+    <!-- Property to read for device identifier -->
+    <string name="property_device">ro.product.device</string>
+
+    <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
+    <string name="filename_base">cm-13.0-%s</string>
+
+    <!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+    <string name="url_base_delta">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/delta/</string>
+
+    <!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+    <string name="url_base_update">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/delta/</string>
+
+    <!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+    <string name="url_base_full">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/</string>
+
+    <!-- URL base to fetch all builds -->
+    <string name="url_base_json">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/builds.json"</string>
+
+    <!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
+    <item type="bool" name="apply_signature">true</item>
+    
+    <!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
+    <item type="bool" name="inject_signature_enable">true</item>
+    
+    <!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the platform.x509 key used to sign the ZIP file -->
+    <string name="inject_signature_keys"><![CDATA[v2 {64,0x7e4b9ded,{907327515,397870132,1305575373,2556297280,3621183202,2206714529,722286238,2849611982,2483742304,844152109,1839524545,578748683,2493352500,3293403142,1105016393,4216930103,1300848743,4229523790,906392992,1540787661,377470330,4217448686,4151635330,1372013604,1659114153,2032729388,4011906097,505707557,3016425084,3561154180,167121459,1226125782,426059214,1148745341,2957396024,371423756,3496644495,3058868538,273398772,1322680010,2216344046,3705333594,1194417090,1033848872,162770326,1749513934,2256762439,4239142507,3990381693,757946559,918035262,1646101948,1731651164,1964707196,2115796391,323850951,3055015365,1890739399,1153061267,3946774829,3324217384,1450347552,2140944133,3945136229},{1032058066,3965056292,2424834933,3350231654,360136661,688021697,2092602460,360682149,80338690,2449494794,1355579181,1675135509,855642561,2678040237,3774920660,1514557642,3186656817,3745194751,3523930502,2183193769,3905934390,3210129469,597060788,1564268584,607518314,1346075256,445118090,167233068,2249003442,1851163471,904218866,1668892338,2538562710,2324936721,2781644590,506482869,2484387753,492404680,4136909721,3981523457,3177824626,2100326928,2332914509,2675952942,1032598650,1847183167,3285308187,2592049934,2584280388,620618564,4178173928,4011277030,3575432418,20335053,4058831478,3711550169,633963365,3948507576,4210027362,2807349447,325233376,1770844971,3532241844,2800111274}}]]></string>
+
+    <string name="android_version">ro.build.version.release</string>
+
+    <string name="official_version_tag">NIGHTLY</string>
+</resources>

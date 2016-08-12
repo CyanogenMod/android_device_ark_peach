@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- CyanogenMod Updates -->
+  <PreferenceScreen android:key="cm_updates" android:title="@string/system_update_settings_list_item_title" android:summary="@string/system_update_settings_list_item_summary">
+    <intent android:action="android.intent.action.MAIN" android:targetPackage="eu.chainfire.opendelta" android:targetClass="eu.chainfire.opendelta.MainActivity"/>
+  </PreferenceScreen>

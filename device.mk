@@ -112,6 +112,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# OTA
+PRODUCT_PACKAGES += OpenDelta
+
 # RIL
 PRODUCT_PACKAGES += \
     libxml2

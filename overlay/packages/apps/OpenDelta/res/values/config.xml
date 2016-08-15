@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Property to read for ROM version -->
-    <string name="property_version">ro.cm.version</string>
 
-    <!-- Property to read for device identifier -->
-    <string name="property_device">ro.product.device</string>
+	<!-- Output some debug strings -->
+	<item name="debug_output" type="bool">true</item>
 
-    <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-    <string name="filename_base">cm-13.0-%s</string>
+	<!-- Property to read for ROM version -->
+	<string name="property_version">ro.cm.version</string>
 
-    <!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_delta">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/delta/</string>
+	<!-- Property to read for device identifier -->
+	<string name="property_device">ro.product.device</string>
 
-    <!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_update">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/delta/</string>
+	<!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
+	<string name="filename_base">cm-13.0-%s</string>
 
-    <!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_full">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/</string>
+	<!-- Path deltas are stored, relative to sdcard root -->
+	<string name="path_base">OpenDelta</string>
 
-    <!-- URL base to fetch all builds -->
-    <string name="url_base_json">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/builds.json"</string>
+	<!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+	<string name="url_base_delta">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/%s/</string>
 
-    <!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
-    <item type="bool" name="apply_signature">true</item>
-    
-    <!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
-    <item type="bool" name="inject_signature_enable">true</item>
-    
-    <!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the platform.x509 key used to sign the ZIP file -->
-    <string name="inject_signature_keys"><![CDATA[v2 {64,0x7e4b9ded,{907327515,397870132,1305575373,2556297280,3621183202,2206714529,722286238,2849611982,2483742304,844152109,1839524545,578748683,2493352500,3293403142,1105016393,4216930103,1300848743,4229523790,906392992,1540787661,377470330,4217448686,4151635330,1372013604,1659114153,2032729388,4011906097,505707557,3016425084,3561154180,167121459,1226125782,426059214,1148745341,2957396024,371423756,3496644495,3058868538,273398772,1322680010,2216344046,3705333594,1194417090,1033848872,162770326,1749513934,2256762439,4239142507,3990381693,757946559,918035262,1646101948,1731651164,1964707196,2115796391,323850951,3055015365,1890739399,1153061267,3946774829,3324217384,1450347552,2140944133,3945136229},{1032058066,3965056292,2424834933,3350231654,360136661,688021697,2092602460,360682149,80338690,2449494794,1355579181,1675135509,855642561,2678040237,3774920660,1514557642,3186656817,3745194751,3523930502,2183193769,3905934390,3210129469,597060788,1564268584,607518314,1346075256,445118090,167233068,2249003442,1851163471,904218866,1668892338,2538562710,2324936721,2781644590,506482869,2484387753,492404680,4136909721,3981523457,3177824626,2100326928,2332914509,2675952942,1032598650,1847183167,3285308187,2592049934,2584280388,620618564,4178173928,4011277030,3575432418,20335053,4058831478,3711550169,633963365,3948507576,4210027362,2807349447,325233376,1770844971,3532241844,2800111274}}]]></string>
+	<!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+	<string name="url_base_update">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/%s/</string>
 
-    <string name="android_version">ro.build.version.release</string>
+	<!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
+	<string name="url_base_full">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/%s/</string>
 
-    <string name="official_version_tag">NIGHTLY</string>
+	<!-- URL base to fetch all builds -->
+	<string name="url_base_json">http://lolmaxlik.cloudapp.net/compiled/CyanogenMod/builds.json"</string>
+
+	<!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
+	<item name="apply_signature" type="bool">true</item>
+
+	<!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
+	<item name="inject_signature_enable" type="bool">true</item>
+
+	<!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the platform.x509 key used to sign the ZIP file -->
+	<string name="inject_signature_keys"><![CDATA[v2 {64,0x9d3ef4e7,{3451855145,2574857780,2212470067,2065828617,2220798544,1453138002,3035953543,349537325,3471576065,3709424322,1499657722,626083680,3508502098,135982109,2406850010,2674691998,3903782739,3673009508,3196976129,124737966,3727608735,3698514242,2926317182,2598715876,2200551045,3324466456,2027872794,1316834497,3538558575,4094723182,3091112109,152419065,961268200,2817719766,2542630774,735678394,2025086356,3319743251,3482513753,3754037486,2186326636,2162920719,1933319201,1362420666,3093979107,3944963833,3173846995,3307766644,4239176696,3380551792,3189093155,3679104199,4159403556,3373361362,737822358,2043192588,3446724037,2184123451,3680508975,492248740,1654088879,3739912969,188663922,4074712169},{2400585854,3884144496,312737665,3547448515,3596760612,2953776441,190371072,1980790627,3681130262,827104214,1597200957,1333455720,1391423898,4233042842,3284284880,50168935,2424437529,2771213818,3715896496,3320142743,3649069246,2702994054,839870558,1257344415,3116165843,4195920375,2497396347,1334871168,3550010104,64795091,3042249326,4155098628,123980023,3500559217,1825888674,443352554,3891428201,2484397377,4136956616,4201065713,2547196505,3411971111,2135688607,393830937,4198844531,3826748593,3979050977,1220766766,3592470842,2278136,1841247501,3507376964,3313320668,3849023694,2185649624,3043141327,1601153541,939583339,2083130022,3508853409,2068728550,3713282728,2402412627,1764295415}}]]></string>
+
+	<string name="official_version_tag">NIGHTLY</string>
 </resources>

@@ -91,11 +91,8 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    accelcal \
-    AccCalibration \
-    sensors.msm8916 \
-    libcalmodule_common \
-    calmodule.cfg
+     sensord \
+     sensors.msm8916
 
 # Media
 PRODUCT_COPY_FILES += \

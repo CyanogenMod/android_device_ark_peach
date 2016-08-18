@@ -172,3 +172,7 @@ service calibacc /system/bin/accelcal
 
 on property:sys.sensors.acc=*
     start calibacc
+
+# Fix torch on notification drawer
+on property:sys.boot_completed=1
+    restart media

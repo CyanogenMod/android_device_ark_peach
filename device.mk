@@ -62,10 +62,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/Goodix-CTP.kl:system/usr/keylayout/Goodix-CTP.kl
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Display
 PRODUCT_PACKAGES += \
     libjni_livedisplay
@@ -108,9 +104,6 @@ PRODUCT_PACKAGES += \
 # Browser
 PRODUCT_PACKAGES += \
     Gello
-
-# OTA
-PRODUCT_PACKAGES += OpenDelta
 
 # RIL
 PRODUCT_PACKAGES += \

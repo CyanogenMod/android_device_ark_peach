@@ -158,3 +158,17 @@ on charger
    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
    start vm_bms
 
+service sensord /system/bin/sensord
+    class main
+    user root
+
+on property:init.svc.zygote=restarting
+    restart sensord
+
+service calibacc /system/bin/accelcal
+    class main
+    oneshot
+    disabled
+
+on property:sys.sensors.acc=*
+    start calibacc

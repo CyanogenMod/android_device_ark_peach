@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from seed device
 $(call inherit-product, device/ark/peach/device.mk)
 
+# Locales
+PRODUCT_LOCALES := en_US ru_RU uk_UA
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := peach
 PRODUCT_NAME := full_peach

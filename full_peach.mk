@@ -17,11 +17,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from peach device
-$(call inherit-product, device/ark/peach/device.mk)
-
-# Locales
-PRODUCT_LOCALES := en_US ru_RU uk_UA
+# Inherit from seed device
+$(call inherit-product, device/akr/peach/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := peach
@@ -29,5 +26,4 @@ PRODUCT_NAME := full_peach
 PRODUCT_BRAND := ARK
 PRODUCT_MODEL := Benefit A3
 PRODUCT_MANUFACTURER := ark
-
 

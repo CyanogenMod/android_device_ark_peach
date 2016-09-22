@@ -15,7 +15,7 @@
 
 FORCE_32_BIT := true
 
--include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+-include device/ark/msm8916-common/BoardConfigCommon.mk
 
 include device/ark/peach/board/*.mk
 

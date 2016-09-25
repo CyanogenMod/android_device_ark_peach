@@ -1,0 +1,27 @@
+From 44cdeff0af3fa1a12b9cc656e22f0d0af04eb9d3 Mon Sep 17 00:00:00 2001
+From: lolmaxlik <ilya.lebedev.2003@mail.ru>
+Date: Sun, 25 Sep 2016 11:34:33 +0600
+Subject: [PATCH] Enable OTAUpdates APP
+
+---
+ res/xml/device_info_settings.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/res/xml/device_info_settings.xml b/res/xml/device_info_settings.xml
+index 63fd94a..e0e1e11 100644
+--- a/res/xml/device_info_settings.xml
++++ b/res/xml/device_info_settings.xml
+@@ -39,8 +39,8 @@
+                 android:title="@string/cmupdate_settings_title"
+                 android:summary="@string/system_update_settings_list_item_summary">
+             <intent android:action="android.intent.action.MAIN"
+-                    android:targetPackage="com.cyanogenmod.updater"
+-                    android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
++                    android:targetPackage="com.ota.updates"
++                    android:targetClass="com.ota.updates.OtaUpdates" />
+         </PreferenceScreen>
+ 
+         <!-- Device status - launches activity -->
+-- 
+2.7.4
+

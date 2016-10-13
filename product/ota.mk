@@ -1,4 +1,7 @@
 #Build Custom OTAUpdates APP
+#Export CM_BUILDTYPE to NIGHTLY type:
+CM_BUILDTYPE :=NIGHTLY
+
 # OTAUpdates
 PRODUCT_PACKAGES += \
     OTAUpdates

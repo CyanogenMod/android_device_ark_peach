@@ -1,0 +1,15 @@
+Device Tree for ARK Benefit A3(peach)
+============================================================
+Basic   | Specification List
+-------:|:-------------------------
+CPU     | Quad-core 1.2 GHz ARM® Cortex™ A53
+CHIPSET | Qualcomm MSM8916 Snapdragon 410
+GPU     | Adreno 306
+Memory  | 1 GB
+Shipped Android Version | 5.0.2
+Storage | 8 GB
+MicroSD | Up to 128 GB
+Battery | 2100 mAh (removable)
+Display | 720 x 1280 pixels, 5"
+Rear Camera  | 8.0 MP Dual-Flash
+Front Camera | 2.0 MP

@@ -197,4 +197,7 @@
         <item>SUPL_ES=0</item>
     </string-array>
 
+	<!-- The RadioAccessFamilies supported by the device.
+         Empty is viewed as "all". -->
+<string translatable="false" name="config_radio_access_family">GSM|GPRS|EDGE|WCDMA|LTE</string>
 </resources>
